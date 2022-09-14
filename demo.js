@@ -42,11 +42,11 @@ function createHeader(data) {
 }
 
 // Creates an empty row for the table
-function createRow(grade) {
+function createRow() {
   var row = document.createElement("tr");
 
   // Create the first two columns
-  for (var i = 0; i < 2; i++) {
+  for (var i = 0; i < 3; i++) {
     var cell = document.createElement("td");
     if(i == 0){
       var input = document.createElement("input");
@@ -64,18 +64,19 @@ function createRow(grade) {
       email.setAttribute("id", "email");
       email.setAttribute("placeholder", "Email");
       email.setAttribute("required", "true");
-      var cell = document.createElement("td");
       cell.appendChild(email);
     }
+
+    // Add the grade selector to the third column
+    if(i == 2)
+      cell.appendChild(
+        createSelector([
+          "First-year", "Second-year", "Third-year", "Fourth-year"
+        ])
+      );
     row.appendChild(cell);
   }
 
-  // Add the grade selector to the third column
-  row.appendChild(
-    createSelector([
-      "First-year", "Second-year", "Third-year", "Fourth-year", "Fifth-year"
-    ])
-  );
   return row;
 }
 
