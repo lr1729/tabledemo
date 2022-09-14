@@ -19,7 +19,7 @@ function createTable() {
   var numStudents = document.getElementById("seats").value;
   for (var i = 0; i < numStudents; i++) {
     // Add table rows, with the second argument representing the grade level
-    tbody.appendChild(createRow(1));
+    tbody.appendChild(createRow());
   }
 
   // Append the table body and headers to the table
