@@ -8,12 +8,14 @@
 <body>
   <h1>LupSeat Demo</h1>
 
+  <!-- Input for generating the table -->
   <label for="seats">Number of students:</label>
   <input type="number" id="seats" title="Number of students in your class" placeholder="Number of Students" value="4" required />
   <button id="submit" onclick="createTable()" >Create Table</button>
 
   <div id="table"></div>
 
+  <!-- Saving and editing the table -->
   <div id="save">
     <label id="savelabel" for="save">Done editing?</label>
     <button id="savebutton" onclick="saveTable()">Save Table</button>

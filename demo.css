@@ -1,7 +1,10 @@
+/* Header styling */
 h1 {
     color: #355B85;
     font-family: sans-serif;
 }
+
+/* Table styling */
 table {
     border-collapse: collapse;
     margin: 25px 0;
@@ -29,6 +32,17 @@ tbody tr:last-of-type {
     border-bottom: 2px solid #355B85;
 }
 
+tbody tr td:first-child {
+  width: 8em;
+  word-break: break-all;
+}
+
+tbody tr td:nth-child(2) {
+  width: 10em;
+  word-break: break-all;
+}
+
+/* Input styling */
 input:invalid {
   border: 2px solid red;
 }
@@ -41,17 +55,6 @@ select {
   -webkit-appearance: menulist-button;
    height: 30px;
 }
-
-tbody tr td:first-child {
-  width: 8em;
-  word-break: break-all;
-}
-
-tbody tr td:nth-child(2) {
-  width: 10em;
-  word-break: break-all;
-}
-
 #save {
   display : none;
 }
@@ -60,6 +63,7 @@ tbody tr td:nth-child(2) {
   height: 23px;
 }
 
+/* Document styling */
 html, body {
     height: 100%;
 }

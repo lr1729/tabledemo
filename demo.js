@@ -41,9 +41,11 @@ function createHeader(data) {
   return row;
 }
 
+// Creates an empty row for the table
 function createRow(grade) {
   var row = document.createElement("tr");
 
+  // Create the first two columns
   for (var i = 0; i < 2; i++) {
     var cell = document.createElement("td");
     if(i == 0){
@@ -67,9 +69,6 @@ function createRow(grade) {
     }
     row.appendChild(cell);
   }
-
-  // Add email input field
-  row.appendChild(cell);
 
   // Add the grade selector to the third column
   row.appendChild(
