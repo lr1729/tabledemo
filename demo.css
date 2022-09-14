@@ -1,0 +1,75 @@
+h1 {
+    color: #355B85;
+    font-family: sans-serif;
+}
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr {
+    background-color: #355B85;
+    color: #ffffff;
+    text-align: left;
+}
+
+th {
+    padding: 5px 15px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #355B85;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+select {
+  -webkit-appearance: menulist-button;
+   height: 30px;
+}
+
+tbody tr td:first-child {
+  width: 8em;
+  word-break: break-all;
+}
+
+tbody tr td:nth-child(2) {
+  width: 10em;
+  word-break: break-all;
+}
+
+#save {
+  display : none;
+}
+
+#email, #name {
+  height: 23px;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
